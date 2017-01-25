@@ -12,6 +12,30 @@ a.arrow {
 	font-style: italic;
 }
 
+h2 .glyphicon {
+	margin-right:14px;
+}
+
+.title_fr {
+	color: gray;
+}
+
+h1 .slash {
+	margin-left:28px;
+	margin-right:28px;
+	color: #606060;
+}
+
+.bracket {
+	font-size: 14px;
+}
+
+h2 .slash {
+	margin-left:14px;
+	margin-right:14px;
+	color: #606060;
+}
+
 #abstract {
 	background: url(images/france-paris-la_defense.jpg) 50% 0 fixed;
 	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
@@ -69,33 +93,14 @@ a.arrow {
 	font-size: 28px;
 }
 
-#more h2 {
-	font-size: 18px;
-	margin: 0;
-}
-
-h2 .glyphicon {
-	margin-right:14px;
-}
-
-.title_fr {
-	color: gray;
-}
-
-h1 .slash {
-	margin-left:28px;
-	margin-right:28px;
-	color: #606060;
-}
-
-.bracket {
-	font-size: 14px;
-}
-
-h2 .slash {
-	margin-left:14px;
-	margin-right:14px;
-	color: #606060;
+#demo { 
+	background: linear-gradient(to bottom, rgba(255,255,255,0.8) 40%, rgba(0,0,0,0.2)), url(images/google-datacenter.jpg) 50% 0 fixed;
+	height: auto;
+	margin: 0 auto; 
+	width: 100%; 
+	position: relative; 
+	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+	padding: 90px 0;
 }
 
 #more { 
@@ -106,6 +111,11 @@ h2 .slash {
 	position: relative; 
 	box-shadow: 0 0 50px rgba(0,0,0,0.8);
 	padding: 90px 0;
+}
+
+#more h2 {
+	font-size: 18px;
+	margin: 0;
 }
 
 #papers {

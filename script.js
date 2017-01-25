@@ -24,5 +24,11 @@ $(document).ready(function(){
 	// navbar
 	$('body').scrollspy({ target: '#navbar' })
 	})
+	
+	// tab
+	$('#myTabs a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+	})
 
 }); // close out script
