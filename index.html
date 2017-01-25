@@ -9,13 +9,13 @@
 	PEPIN</title>
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="script.js"></script>
 </head>
 <body data-spy="scroll" data-target="#navbar">
@@ -85,7 +85,7 @@
 		<div class="container">
 			<h1>The complete method<span class="slash">/</span><span class="title_fr">La démarche complète</span></h1>
 			<div class="actions-block well">
-				<img width="80%" class="center" src="images/complete-process.svg" alt="Complete enterprise architecture alignment process by weaving models">
+				<img width="80%" class="center-block" src="images/complete-process.svg" alt="Complete enterprise architecture alignment process by weaving models">
 			</div>
 		</div>
 	</section>
@@ -139,7 +139,7 @@
 		</div>
 	</section>
 	<!-- Section Paper / Contact -->
-	<section id="more" data-speed="2" data-type="background">
+	<section id="more" data-speed="1" data-type="background">
 		<div class="container">
 			<h1>Read more about<span class="slash">/</span><span class="title_fr">En savoir plus</span></h1>
 			<div class="panel panel-default">
@@ -214,9 +214,9 @@
 				</div>
 				<div class="panel-body">
 					<div class="center">
-						<a href="#" class="btn btn-primary btn-lg active" role="button">PDF
+						<button type="button" class="btn btn-primary btn-lg active" data-toggle="modal" data-target="#getThesis">PDF
 							- Télécharger <span class="glyphicon glyphicon-floppy-save"></span>
-						</a> <br>
+						</button>
 					</div>
 					<div id="jury">
 						<h3>
@@ -281,12 +281,56 @@
 							class="slash">/</span><span class="title_fr">Contact</span>
 					</h2>
 				</div>
-				<div class="panel-body">TODO</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-md-2 col-md-offset-3 center"><img alt="jonathan pepin photo" width="137px" src="images/jonathan-pepin.jpg"></div>
+						<div class="col-md-4">
+							<div class="list-group">
+								<a href="https://linkedin.com/in/pepinjonathan" class="list-group-item" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i> LinkedIn</a>
+								<a href="http://www.viadeo.com/fr/profile/jonathan.pepin1" class="list-group-item" target="_blank"><i class="fa fa-viadeo fa-2x" aria-hidden="true"></i> Viadeo</a>
+								<a href="http://www.doyoubuzz.com/jonathan-pepin" class="list-group-item" target="_blank"><i class="fa fa-user fa-2x" aria-hidden="true"></i> DoYouBuzz</a>
+								<a href="mailto:%62&#105;%74&#97;&#64;&#106;&#112;%65&#112;%2e%69n" class="list-group-item" target="_blank"><i class="fa fa-envelope-open fa-2x" aria-hidden="true"></i> EMail</a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
 			</div>
 		</div>
 		<footer class="center">
 			<p>Copyright - Jonathan Pepin - 2017</p>
 		</footer>
 	</section>
+
+	<!-- Get Thesis by Email Modal -->
+	<div class="modal fade" id="getThesis" tabindex="-1" role="dialog"
+		aria-labelledby="getThesisLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="getThesisLabel">Télécharger la thèse</h4>
+				</div>
+				<form>
+					<div class="modal-body">
+						<div class="form-group">
+						<label class="control-label">Pour obtenir la thèse en PDF, veuillez entrer votre adresse email :</label>
+							<input type="email" class="form-control" id="inputEmail"
+								placeholder="adresse@example.com">
+						</div>
+						Vous recevrez un mail avec un lien de téléchargement.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+						<button type="button" id="submitEmail" type="submit" class="btn btn-success">Envoyer</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
 </body>
 </html>

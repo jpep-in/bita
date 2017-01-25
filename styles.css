@@ -153,9 +153,23 @@ h2 .slash {
 	padding: 5px 15px !important;
 }
 
-.table-condensed td {
+.table-condensed td, .list-group-item {
 	padding-top: 2px !important;
 	padding-bottom: 2px !important;
+}
+
+.list-group-item {
+	text-align: center;
+	
+}
+
+.list-group {
+	margin-bottom: 0 !important;
+}
+
+a.list-group-item:hover {
+	background-color: #286090 !important;
+	color: white !important;
 }
 
 footer {

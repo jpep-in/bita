@@ -23,7 +23,6 @@ $(document).ready(function(){
 
 	// navbar
 	$('body').scrollspy({ target: '#navbar' })
-	})
 	
 	// tab
 	$('#myTabs a').click(function (e) {
@@ -31,4 +30,29 @@ $(document).ready(function(){
 		$(this).tab('show')
 	})
 
+	$('#submitEmail').click(function(e){
+		e.preventDefault();
+		var mail = $('#inputEmail').val();
+		if (validateEmail(mail)) {
+			$('#inputEmail').parent().removeClass("has-error");
+			$('#inputEmail').parent().addClass("has-success");
+			/*
+    $.post('http://path/to/post', 
+       $('#myForm').serialize(), 
+       function(data, status, xhr){
+         // do something here with response;
+       });
+			 */
+			$('#getThesis').modal('hide')
+		} else {
+			$('#inputEmail').parent().removeClass("has-success");
+			$('#inputEmail').parent().addClass("has-error");
+		}
+	});
 }); // close out script
+
+// Function that validates email address through a regular expression.
+function validateEmail(address) {
+	var filter = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+	return filter.test(address);
+}
