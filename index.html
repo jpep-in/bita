@@ -1,8 +1,243 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Hello World !</title>
-  </head>
-  <body>
-    <h1>todo</h1>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Architecture Enterprise: Business IT Alignment - Jonathan
+	PEPIN</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</head>
+<body data-spy="scroll" data-target="#navbar">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#navbar">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="fa fa-bars"></span>
+				</button>
+				<a class="navbar-brand" href="/">
+					<span id="title" title="Architecture Enterprise: Business-IT Alignement by Jonathan PEPIN">
+						<img width="40px" src="images/Globe_icon.svg" alt="logo">
+						<span id="title_main">AE: BITA</span>
+						-
+						<span id="title_sub">Jonathan PEPIN</span>
+					</span>
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="nav navbar-nav"></ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="#abstract">Abstract</a></li>
+					<li><a href="#process">Method</a></li>
+					<!-- 					<li><a href="#photomatons">PhotoMatons</a></li> -->
+					<li><a href="#more">More</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- Section Abstract / Resumé -->
+	<section id="abstract" data-speed="10" data-type="background">
+		<div class="container">
+			<div class="actions-block well">
+				<div class="row">
+					<div class="col-md-6">
+					<h1>Enterprise Architecture</h1>
+					<h2>Business-IT alignment</h2>
+					<h3>Abstract</h3>
+					<p>Enterprise software architects take great care of information system maintenance, which requires regular adjustments in order to stay in sync with management needs.
+					<br>In practice, business and application viewpoints diverge as the enterprise strategy and the legacy applications evolve.
+					<br>Thus, it is difficult for architects to evaluate the impact of process evolution with respect to chosen technologies. Risk of inconsistency  becomes more important and damaging over time.
+					<br>We consider each IS viewpoint as a model; to aggregate these, we propose to map the models with an alignment definition based on meta-models.
+					<br>This alignment is therefore supported by model engineering tools.
+					<br>As existing business models and source code cannot be aligned, business models is aligned with application models. These are built by performing a reverse engineering of the code.
+					<br>Futhermore, analysing the alignment results enables one to measure consistency and completeness indicators. They help the architect in the process of making changes to the information system.
+					<br>The presented approach is illustrated with various large scale french insurance companies use cases. It reveals valuable improvement perspectives.
+					</p>
+					</div>
+					<div class="col-md-6">
+					<h1>Architecture d’entreprise</h1>
+					<h2>Alignement des cartographies métiers et applicatives du système d’information</h2>
+					<h3>Résumé</h3>
+					<p>L'architecture d'entreprise se préoccupe de la maintenance d'un système d'information (SI) qui nécessite une mise en phase répétée avec le pilotage de l'entreprise. En pratique, les points de vue métiers et applicatifs s'éloignent à mesure qu'évoluent la stratégie de l'entreprise et le patrimoine applicatif. 
+					<br>Ainsi, il est difficile pour les architectes de mesurer l'impact de l'évolution des processus métiers vis-à-vis des technologies utilisées. Le risque d'incohérence devient grand et préjudiciable dans le temps.
+					<br>Nous considérons chaque point de vue du SI comme un modèle ; pour associer les points de vue nous proposons une définition de l'alignement au niveau méta-modèle. L'alignement est par conséquent mis en pratique à l'aide d'outils d'ingénierie des modèles.
+					<br>Il n'est pas imaginable d'aligner directement le code source aux modèles métiers existants. Nous avons donc défini un alignement entre modèles métiers et modèles applicatifs. Ces derniers sont construits par rétro-ingénierie du code.
+					<br>L'analyse du résultat de l'alignement permet de générer des indicateurs de cohérence et de complétude qui aident l'architecte dans son processus d'analyse et de décision des évolutions du système d'information.
+					<br>L'approche présentée est expérimentée sur plusieurs cas concrets de taille significative issus d'entreprises du secteur de l'assurance, et ouvre des perspectives intéressantes de valorisation.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="process" data-speed="10" data-type="background">
+		<div class="container">
+			<h1>The complete method<span class="slash">/</span><span class="title_fr">La démarche complète</span></h1>
+			<div class="actions-block well">
+				<img width="80%" class="center" src="images/complete-process.svg" alt="Complete enterprise architecture alignment process by weaving models">
+			</div>
+		</div>
+	</section>
+	<!-- Section Paper / Contact -->
+	<section id="more" data-speed="2" data-type="background">
+		<div class="container">
+			<h1>Read more about<span class="slash">/</span><span class="title_fr">En savoir plus</span></h1>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h2>
+						<span class="glyphicon glyphicon-file"></span>Publications<span
+							class="slash">/</span><span class="title_fr">Publications</span>
+					</h2>
+				</div>
+				<table class="table table-condensed">
+					<tr>
+						<th style="width: 10%;">Date</th>
+						<th style="width: 12%;">Conference</th>
+						<th>Title</th>
+						<th>Type</th>
+						<th style="width: 12%;">Location</th>
+					</tr>
+					<tr>
+						<td>June, 2014</td>
+						<td>CIEL / GDR GPL</td>
+						<td><a
+							href="http://ciel2014.i3s.unice.fr/Ciel2014_fichiers/ActesCiel2014.pdf"
+							target="_blank">Alignement de modèles métiers et applicatifs
+								: une approche pragmatique par transformations de modèle</a></td>
+						<td>Article, Speech, Poster, Demo</td>
+						<td>Paris, France</td>
+					</tr>
+					<tr>
+						<td>April, 2015</td>
+						<td>ICEIS</td>
+						<td><a
+							href="http://www.scitepress.org/DigitalLibrary/PublicationsDetail.aspx?ID=VnHqy4zlbws%3d"
+							target="_blank">A Method for Business-IT Alignment of Legacy
+								Systems</a></td>
+						<td>Article, Speech</td>
+						<td>Barcelone, Espagne</td>
+					</tr>
+					<tr>
+						<td>December, 2015</td>
+						<td>RIMEL / EVOLILLE</td>
+						<td>Alignement de modèles pour l’évolution de patrimoines
+							applicatifs</td>
+						<td>Workshop</td>
+						<td>Lille, France</td>
+					</tr>
+					<tr>
+						<td>June, 2016</td>
+						<td>CAiSE</td>
+						<td><a href="http://ceur-ws.org/Vol-1612/paper20.pdf"
+							target="_blank">A Facet-based Model Mapping Method for EA
+								Alignment and Evolution</a></td>
+						<td>Article, Poster, Demo</td>
+						<td>Ljubljana, Slovénie</td>
+					</tr>
+					<tr>
+						<td>December, 2016</td>
+						<td>CSIMQ</td>
+						<td><a
+							href="https://csimq-journals.rtu.lv/article/download/csimq.2016-9.01/893"
+							target="_blank">An Improved Model Facet Method to Support EA
+								Alignment and Evolution</a></td>
+						<td>Journal article</td>
+						<td>Riga, Lettonie</td>
+					</tr>
+				</table>
+				<div class="panel-heading border-top">
+					<h2>
+						<span class="glyphicon glyphicon-education"></span>Thesis <span
+							class="bracket">(French only) </span><span class="slash">/</span><span
+							class="title_fr">Thèse</span>
+					</h2>
+				</div>
+				<div class="panel-body">
+					<div class="center">
+						<a href="#" class="btn btn-primary btn-lg active" role="button">PDF
+							- Télécharger <span class="glyphicon glyphicon-floppy-save"></span>
+						</a> <br>
+					</div>
+					<div id="jury">
+						<h3>
+							<i>Soutenue le 5 décembre 2016</i> - Jury :
+						</h3>
+						<dl class="dl-horizontal">
+							<dt>Présidente</dt>
+							<dd>
+								<a
+									href="https://www.lirmm.fr/users/utilisateurs-lirmm/marianne-huchard"
+									target="_blank">Mme Marianne HUCHARD, Professeur,
+									Université de Montpellier - LIRMM</a>
+							</dd>
+							<dt>Rapporteurs</dt>
+							<dd>
+								<a
+									href="https://www.irit.fr/-Publications-?code=291&nom=Sèdes+Florence"
+									target="_blank">Mme Florence SEDES, Professeure, Université
+									de Toulouse - IRIT</a>
+							</dd>
+							<dd>
+								<a href="http://www.labri.fr/perso/xblanc/" target="_blank">M.
+									Xavier BLANC, Professeur, Université de Bordeaux - LABRI</a>
+							</dd>
+							<dt>Examinateurs</dt>
+							<dd>
+								<a href="http://www.lifl.fr/~etien/" target="_blank">Mme
+									Anne ETIEN, Maître de Conférences, Université de Lille - INRIA</a>
+							</dd>
+							<dd>
+								<a href="http://web.emn.fr/x-info/jroyer/" target="_blank">M.
+									Jean-Claude ROYER, Professeur, École des Mines de Nantes - LINA</a>
+							</dd>
+							<dd>
+								<a
+									href="http://pagesperso.lina.univ-nantes.fr/~andre-p/fr/index.html"
+									target="_blank">M. Pascal ANDRÉ, Maître de conférences,
+									Université de Nantes - LINA</a>
+							</dd>
+							<dt>Invités</dt>
+							<dd>
+								<a href="http://www.mia-software.com/" target="_blank">M.
+									Erwan BRETON, Directeur technique, Mia-Software</a>
+							</dd>
+							<dd>
+								<a href="http://www.mia-software.com/" target="_blank">M.
+									Laurent PICHIERRI, Ingénieur étude et recherche, Mia-Software</a>
+							</dd>
+							<dt>Directeur de thèse</dt>
+							<dd>
+								<a
+									href="http://pagesperso.lina.univ-nantes.fr/info/perso/permanents/attiogbe/"
+									target="_blank">M. Christian ATTIOGBÉ, Professeur,
+									Université de Nantes - LINA</a>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="panel-heading border-top">
+					<h2>
+						<span class="glyphicon glyphicon-send"></span>Contact<span
+							class="slash">/</span><span class="title_fr">Contact</span>
+					</h2>
+				</div>
+				<div class="panel-body">TODO</div>
+			</div>
+		</div>
+		<footer class="center">
+			<p>Copyright - Jonathan Pepin - 2017</p>
+		</footer>
+	</section>
+</body>
 </html>
