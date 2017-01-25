@@ -94,13 +94,23 @@ h2 .slash {
 }
 
 #demo { 
-	background: linear-gradient(to bottom, rgba(255,255,255,0.8) 40%, rgba(0,0,0,0.2)), url(images/google-datacenter.jpg) 50% 0 fixed;
+	background: url(images/google-datacenter.jpg) 50% 0 fixed;
 	height: auto;
 	margin: 0 auto; 
 	width: 100%; 
 	position: relative; 
 	box-shadow: 0 0 50px rgba(0,0,0,0.8);
 	padding: 90px 0;
+}
+
+#demo h1 {
+	margin-top: 0;
+}
+
+#demo .tab-pane {
+	padding-top: 15px;
+	min-height: 500px;
+	background-color: #fff;
 }
 
 #more { 
@@ -143,12 +153,6 @@ h2 .slash {
 	margin-left: 14px;
 }
 
-.border-top {
-	border-top: 1px solid transparent;
-	border-top-left-radius : 0px !important;
-	border-top-right-radius : 0px !important;
-}
-
 .panel-heading {
 	padding: 5px 15px !important;
 }
@@ -156,6 +160,10 @@ h2 .slash {
 .table-condensed td, .list-group-item {
 	padding-top: 2px !important;
 	padding-bottom: 2px !important;
+}
+
+#contact img {
+	padding-bottom: 15px;
 }
 
 .list-group-item {
