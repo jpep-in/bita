@@ -115,7 +115,7 @@ h2 .slash {
 
 #jury {
 	margin: 0 auto;
-	width: 65%;
+	max-width: 650px;
 }
 
 #jury h3 {
