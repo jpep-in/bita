@@ -95,6 +95,8 @@ h2 .slash {
 
 #demo { 
 	background: url(images/google-datacenter.jpg) 50% 0 fixed;
+	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+	background-size : cover ;
 	height: auto;
 	margin: 0 auto; 
 	width: 100%; 
