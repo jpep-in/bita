@@ -20,6 +20,11 @@ h2 .glyphicon {
 	color: gray;
 }
 
+.caption_fr {
+	margin-top:-10px;
+	color: gray;
+}
+
 h1 .slash {
 	margin-left:28px;
 	margin-right:28px;
