@@ -99,7 +99,7 @@ h2 .slash {
 	margin: 0 auto; 
 	width: 100%; 
 	position: relative; 
-	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+/* 	box-shadow: 0 0 50px rgba(0,0,0,0.8); */
 	padding: 90px 0;
 }
 
@@ -109,7 +109,6 @@ h2 .slash {
 
 #demo .tab-pane {
 	padding-top: 15px;
-	min-height: 500px;
 	background-color: #fff;
 }
 

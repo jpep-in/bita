@@ -18,7 +18,7 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="script.js"></script>
 </head>
-<body data-spy="scroll" data-target="#navbar">
+<body data-spy="scroll" data-target="#navbar" data-offset="100">
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -88,61 +88,98 @@
 				The complete method<span class="slash">/</span><span class="title_fr">La démarche complète</span>
 			</h1>
 			<div class="actions-block well">
-				<img width="85%" class="center-block" src="images/complete-process.svg"
+				<img class="img-responsive" src="images/complete-process.svg"
 					alt="Complete enterprise architecture alignment process by weaving models">
 			</div>
 		</div>
 	</section>
 	<!-- Section Demo -->
-	<section id="demo" data-speed="4" data-type="background">
+	<section id="demo" data-speed="6" data-type="background">
 		<div class="container">
 			<div class="actions-block well">
 			<h1>Demonstration<span class="slash">/</span><span class="title_fr">Démonstration</span></h1>
 				<!-- Nav tabs -->
 				<ul class="nav nav-tabs" role="tablist">
-					<li role="presentation" class="active"><a href="#modeling" aria-controls="modeling" role="tab" data-toggle="tab">1. Modeling</a></li>
-					<li role="presentation"><a href="#transformation" aria-controls="transformation" role="tab" data-toggle="tab">2. Transformation</a></li>
-					<li role="presentation"><a href="#weaving" aria-controls="weaving" role="tab" data-toggle="tab">3. Weaving</a></li>
-					<li role="presentation"><a href="#query" aria-controls="query" role="tab" data-toggle="tab">4. Query</a></li>
-					<li role="presentation"><a href="#clustering" aria-controls="clustering" role="tab" data-toggle="tab">5. Depedencies Clustering</a></li>
+					<li role="presentation" class="active"><a href="#modeling-business" aria-controls="modeling-business" role="tab" data-toggle="tab">1.
+							Modeling Business</a></li>
+					<li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"
+						role="button" aria-haspopup="true" aria-expanded="false">2. Modeling App<span class="caret"></span>
+					</a>
+						<ul class="dropdown-menu">
+							<li role="presentation"><a href="#modeling-app-transfo" aria-controls="modeling-app-transfo" role="tab"
+								data-toggle="tab">Extraction</a></li>
+							<li role="presentation"><a href="#modeling-app-result" aria-controls="modeling-app-result" role="tab"
+								data-toggle="tab">Result</a></li>
+						</ul>
+					</li>
+					<li role="presentation"><a href="#weaving" aria-controls="weaving" role="tab" data-toggle="tab">3. BITAlignment</a></li>
+					<li role="presentation"><a href="#clustering" aria-controls="clustering" role="tab" data-toggle="tab">5.
+							Alignment Analysis</a></li>
 				</ul>
 				<!-- Tab panes -->
-				<div class="tab-content center">
-					<div role="tabpanel" class="tab-pane fade in active" id="modeling">
-						TODO 1
-						<p>Siquis enim militarium vel honoratorum aut nobilis inter
-							suos rumore tenus esset insimulatus fovisse partes hostiles,
-							iniecto onere catenarum in modum beluae trahebatur et inimico
-							urgente vel nullo, quasi sufficiente hoc solo, quod nominatus
-							esset aut delatus aut postulatus, capite vel multatione bonorum
-							aut insulari solitudine damnabatur. Sed quid est quod in hac
-							causa maxime homines admirentur et reprehendant meum consilium,
-							cum ego idem antea multa decreverim, que magis ad hominis
-							dignitatem quam ad rei publicae necessitatem pertinerent?
-							Supplicationem quindecim dierum decrevi sententia mea. Rei
-							publicae satis erat tot dierum quot C. Mario ; dis immortalibus
-							non erat exigua eadem gratulatio quae ex maximis bellis. Ergo
-							ille cumulus dierum hominis est dignitati tributus. Ut enim
-							quisque sibi plurimum confidit et ut quisque maxime virtute et
-							sapientia sic munitus est, ut nullo egeat suaque omnia in se ipso
-							posita iudicet, ita in amicitiis expetendis colendisque maxime
-							excellit. Quid enim? Africanus indigens mei? Minime hercule! ac
-							ne ego quidem illius; sed ego admiratione quadam virtutis eius,
-							ille vicissim opinione fortasse non nulla, quam de meis moribus
-							habebat, me dilexit; auxit benevolentiam consuetudo. Sed quamquam
-							utilitates multae et magnae consecutae sunt, non sunt tamen ab
-							earum spe causae diligendi profectae.</p>
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane fade in active" id="modeling-business">
+						<div class="row">
+							<div class="col-md-10 col-md-offset-1">
+								<img class="img-responsive" alt="source code to model transformation"
+									src="images/1-demo-modeling-fun.png">
+								<div class="caption">
+									<h4>Functional model / Modèle fonctionnel</h4>
+									<p>Partial functional modeling writted by hand and inspired from a real Insurance Company case study.</p>
+									<p>Cartographie fonctionnelle partielle écrite manuellement et inspirée d'une étude de cas sur une
+										entreprise d'assurance existante.</p>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div role="tabpanel" class="tab-pane fade" id="transformation">
-						<img height="500px" alt="source code to model transformation" src="images/2-demo-transfo.gif">
+					<div role="tabpanel" class="tab-pane fade" id="modeling-app-result">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2">
+								<img class="img-responsive" alt="source code to model transformation" src="images/1-demo-modeling-app.png">
+								<div class="caption">
+									<h4>Application model / Modèle applicatif</h4>
+									<p>Small extract from real huge legacy application from a real Insurance Company case study.</p>
+									<p>Extrait d'un important patrimoine applicatif d'une étude sur une entreprise d'assurance existante.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="modeling-app-transfo">
+						<div class="row">
+							<div class="col-md-10 col-md-offset-1">
+								<img class="img-responsive" alt="source code to model transformation"
+									src="images/2-demo-transfo.gif">
+								<div class="caption">
+									<h4>Source code reverse engineering to application model / Extraction du code source vers le modèle
+										applicatif</h4>
+									<p>Small extract from real huge legacy application from a real Insurance Company case study.</p>
+									<p>Extrait d'un important patrimoine applicatif d'une étude sur une entreprise d'assurance existante.</p>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div role="tabpanel" class="tab-pane fade" id="weaving">
-						<img height="500px" alt="mapping business and it models" src="images/3-demo-weaving.gif">
-					</div>
-					<div role="tabpanel" class="tab-pane fade" id="query">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2">
+								<img class="img-responsive" alt="mapping business and it models" src="images/3-demo-weaving.gif">
+								<div class="caption">
+									<h4>Thumbnail label</h4>
+									<p>...</p>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div role="tabpanel" class="tab-pane fade" id="clustering">
-						<img height="500px" alt="clustering dependencies bewteen business and it models" src="images/4-demo-clustering.gif">					
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3">
+								<img class="img-responsive" alt="clustering dependencies bewteen business and it models"
+									src="images/4-demo-clustering.gif">
+								<div class="caption">
+									<h4>Thumbnail label</h4>
+									<p>...</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
