@@ -21,26 +21,6 @@ $(document).ready(function(){
 		e.preventDefault()
 		$(this).tab('show')
 	})
-
-	$('#submitEmail').click(function(e){
-		e.preventDefault();
-		var mail = $('#inputEmail').val();
-		if (validateEmail(mail)) {
-			$('#inputEmail').parent().removeClass("has-error");
-			$('#inputEmail').parent().addClass("has-success");
-			/*
-    $.post('http://path/to/post', 
-       $('#myForm').serialize(), 
-       function(data, status, xhr){
-         // do something here with response;
-       });
-			 */
-			$('#getThesis').modal('hide')
-		} else {
-			$('#inputEmail').parent().removeClass("has-success");
-			$('#inputEmail').parent().addClass("has-error");
-		}
-	});
 }); // close out script
 
 // Function that validates email address through a regular expression.
